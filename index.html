@@ -3,62 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal - E&C Courier</title>
+    <title>Legal Documentation | E&C Courier</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #0056b3; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        nav { background: #f4f4f4; padding: 15px; border-radius: 5px; margin-bottom: 30px; }
-        nav a { margin-right: 20px; color: #0056b3; font-weight: bold; text-decoration: none; }
-        .section { margin-bottom: 60px; }
-        .contact { font-weight: bold; }
+        :root {
+            --primary-blue: #0f172a;
+            --accent-blue: #2563eb;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.7; 
+            color: var(--text-main); 
+            background-color: var(--bg-light);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Fixed Sidebar Navigation */
+        nav { 
+            width: 280px;
+            height: 100vh;
+            background: white;
+            border-right: 1px solid var(--border-color);
+            padding: 40px 20px;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        nav h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 20px; }
+        nav a { display: block; padding: 10px 15px; color: var(--text-main); text-decoration: none; border-radius: 6px; margin-bottom: 5px; transition: all 0.2s; font-size: 0.95rem; }
+        nav a:hover { background: var(--bg-light); color: var(--accent-blue); }
+
+        /* Main Content Area */
+        main { 
+            margin-left: 320px;
+            max-width: 900px;
+            padding: 80px 40px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.02);
+        }
+
+        header { margin-bottom: 60px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 20px; }
+        h1 { font-size: 2.5rem; color: var(--primary-blue); margin: 0; }
+        h2 { font-size: 1.75rem; color: var(--primary-blue); margin-top: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        h3 { font-size: 1.25rem; color: var(--accent-blue); margin-top: 30px; }
+        
+        .last-updated { font-style: italic; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 40px; }
+        .legal-notice { background: #eff6ff; border-left: 4px solid var(--accent-blue); padding: 20px; margin: 30px 0; font-size: 0.95rem; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        
+        .footer-contact { margin-top: 80px; padding: 40px; background: var(--bg-light); border-radius: 12px; text-align: center; }
+        .contact-email { font-weight: bold; color: var(--accent-blue); }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; padding: 20px; border-right: none; border-bottom: 1px solid var(--border-color); }
+            main { margin-left: 0; padding: 40px 20px; }
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <strong>Jump to:</strong>
+        <h2>Legal Documentation</h2>
         <a href="#privacy">Privacy Policy</a>
         <a href="#terms">Terms of Service</a>
+        <a href="#data-rights">Data Rights</a>
+        <a href="#liability">Liability Framework</a>
     </nav>
 
-    <div id="privacy" class="section">
-        <h1>Privacy Policy</h1>
-        <p><em>Last Updated: February 20, 2026</em></p>
-        <p>E&C Courier respects your privacy. This policy explains how we handle your data.</p>
-        
-        <h3>1. Data Collection</h3>
-        <ul>
-            <li><strong>Personal:</strong> Name, email, and phone number.</li>
-            <li><strong>Location:</strong> We track <strong>Driver location only</strong> for delivery processing. We do not track customers.</li>
-            <li><strong>Technical:</strong> Google Firebase collects basic device info for app stability.</li>
-        </ul>
+    <main>
+        <section id="privacy">
+            <header>
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Effective Date: February 20, 2026</p>
+            </header>
 
-        <h3>2. Use of Data</h3>
-        <p>Data is used to complete deliveries, notify customers, and improve app performance. We share necessary data with <strong>Google Firebase</strong> for hosting and analytics.</p>
+            <p>E&C Courier ("the Company," "we," "us") is committed to the protection of user data and adherence to the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em>. This policy governs data collection within the E&C Courier application and associated Firebase services.</p>
 
-        <h3>3. Account Deletion</h3>
-        <p>To delete your account and data, email <span class="contact">admin@eandccourier.ca</span>.</p>
-    </div>
+            <h3>1. Scope of Data Acquisition</h3>
+            <ul>
+                <li><strong>Identity Data:</strong> Legal name, verified email address, and telephonic contact information required for service authentication.</li>
+                <li><strong>Geolocation Telemetry:</strong> Precise location tracking is restricted to **authorized Drivers** during active duty cycles. Customer location is processed only at the point of delivery specification and is not tracked persistently.</li>
+                <li><strong>Infrastructure Logs:</strong> Technical metadata (device identifiers, IP addresses, crash logs) is processed via **Google Firebase** to ensure platform integrity and uptime.</li>
+            </ul>
 
-    <hr>
+            <h3>2. Data Processing & Third-Party Disclosure</h3>
+            <p>We do not sell, rent, or lease user databases to third parties. Data is shared with Google Firebase solely for the technical execution of service. We reserve the right to disclose information if required by Canadian law or to protect the vital interests of our users.</p>
 
-    <div id="terms" class="section">
-        <h1>Terms of Service</h1>
-        <p><em>Last Updated: February 20, 2026</em></p>
-        
-        <h3>1. Acceptance of Terms</h3>
-        <p>By using the E&C Courier app, you agree to these rules. If you do not agree, please do not use our services.</p>
+            <h3>3. Data Retention & Erasure (The "Right to be Forgotten")</h3>
+            <p>Users may invoke their right to data deletion at any time. Upon receipt of a formal request to <span class="contact-email">admin@eandccourier.ca</span>, the Company will purge all PII (Personally Identifiable Information) from active production databases within thirty (30) days, subject to statutory record-keeping requirements.</p>
+        </section>
 
-        <h3>2. User Conduct</h3>
-        <p>Users must provide accurate info. Drivers must maintain a valid license and follow local Brandon/Manitoba traffic laws. Abuse of the app or fraudulent orders will result in an immediate ban.</p>
+        <hr style="margin: 80px 0; border: 0; border-top: 1px solid var(--border-color);">
 
-        <h3>3. Limitation of Liability</h3>
-        <p>E&C Courier is not responsible for delays caused by weather, traffic, or incorrect addresses provided by the user. We provide the service "as is" via the Firebase platform.</p>
+        <section id="terms">
+            <header>
+                <h1>Terms of Service</h1>
+                <p class="last-updated">Effective Date: February 20, 2026</p>
+            </header>
 
-    
-        <h3>4. Contact</h3>
-        <p>Questions? Contact <span class="contact">admin@eandccourier.ca</span>.</p>
-    </div>
+            <div class="legal-notice">
+                <strong>BINDING ARBITRATION NOTICE:</strong> By utilizing the E&C Courier platform, you agree that disputes between you and the Company will be resolved by binding, individual arbitration in the Province of Manitoba.
+            </div>
+
+            <h3>1. Terms of Engagement</h3>
+            <p>Access to the E&C Courier platform constitutes an unconditional acceptance of these Terms. We provide a digital logistics interface facilitated by Firebase. Your continued use following any amendments constitutes acceptance of revised terms.</p>
+
+            <h3>2. Driver Obligations & Statutory Compliance</h3>
+            <p>Drivers operating via the platform represent and warrant that they maintain a valid Class 5 (or higher) Manitoba Driver's License and all required vehicular insurance. Drivers must adhere strictly to the <em>Manitoba Highway Traffic Act</em>. Failure to comply results in immediate and irrevocable termination of platform access.</p>
+
+            <h3 id="liability">3. Comprehensive Limitation of Liability</h3>
+            <p>To the maximum extent permitted by law, E&C Courier shall not be liable for any indirect, incidental, special, or consequential damages. This includes, but is not limited to, delays resulting from:</p>
+            <ul>
+                <li>Force Majeure events (Extreme weather, infrastructure failure).</li>
+                <li>Inaccurate delivery coordinates provided by the end-user.</li>
+                <li>Third-party platform outages (Google Cloud/Firebase).</li>
+            </ul>
+            <p>The service is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind.</p>
+
+            <h3>4. Indemnification</h3>
+            <p>You agree to indemnify and hold harmless E&C Courier and its directors from any claims, losses, or expenses (including legal fees) arising from your misuse of the platform or violation of these Terms.</p>
+
+            <div class="footer-contact">
+                <h3>Legal Inquiries</h3>
+                <p>For formal notices or data requests, please contact our legal desk:</p>
+                <a href="mailto:admin@eandccourier.ca" class="contact-email">admin@eandccourier.ca</a>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
