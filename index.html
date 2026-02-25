@@ -49,7 +49,7 @@
         }
 
         header { margin-bottom: 60px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 20px; }
-        h1 { font-size: 2.5rem; color: var(--primary-blue); margin: 0; }
+        h1 { font-size: 2.5rem; color: var(--primary-blue); margin: 0; display: flex; align-items: center; gap: 15px; }
         h2 { font-size: 1.75rem; color: var(--primary-blue); margin-top: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
         h3 { font-size: 1.25rem; color: var(--accent-blue); margin-top: 30px; }
         
@@ -76,65 +76,61 @@
         <a href="#privacy">Privacy Policy</a>
         <a href="#terms">Terms of Service</a>
         <a href="#data-rights">Data Rights</a>
-        <a href="#liability">Liability Framework</a>
+        <a href="#liability">Our Liability</a>
     </nav>
 
     <main>
         <section id="privacy">
             <header>
-                <h1>Privacy Policy</h1>
+                <h1><img src="icon2.png" alt="Logo" style="height: 45px;"> Privacy Policy</h1>
                 <p class="last-updated">Effective Date: February 20, 2026</p>
             </header>
 
-            <p>E&C Courier ("the Company," "we," "us") is committed to the protection of user data and adherence to the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em>. This policy governs data collection within the E&C Courier application and associated Firebase services.</p>
+            <p>E&C Courier cares about your privacy. We follow Canadian privacy laws (PIPEDA) to keep your information safe while you use our app and website.</p>
 
-            <h3>1. Scope of Data Acquisition</h3>
+            <h3>1. Information We Collect</h3>
             <ul>
-                <li><strong>Identity Data:</strong> Legal name, verified email address, and telephonic contact information required for service authentication.</li>
-                <li><strong>Geolocation Telemetry:</strong> Precise location tracking is restricted to **authorized Drivers** during active duty cycles. Customer location is processed only at the point of delivery specification and is not tracked persistently.</li>
-                <li><strong>Infrastructure Logs:</strong> Technical metadata (device identifiers, IP addresses, crash logs) is processed via **Google Firebase** to ensure platform integrity and uptime.</li>
+                <li><strong>Account Info:</strong> Your name, email, and phone number so you can log in and use our service.</li>
+                <li><strong>Location:</strong> We only use your location to help you set delivery points. We do not track you all the time.</li>
+                <li><strong>Technical Data:</strong> Basic info like your device type and IP address to keep the app working correctly via Google Firebase.</li>
             </ul>
 
-            <h3>2. Data Processing & Third-Party Disclosure</h3>
-            <p>We do not sell, rent, or lease user databases to third parties. Data is shared with Google Firebase solely for the technical execution of service. We reserve the right to disclose information if required by Canadian law or to protect the vital interests of our users.</p>
+            <h3>2. How We Share Data</h3>
+            <p>We do not sell or rent your information to anyone. We only share data with Google Firebase to run the technical side of our service, or if the law requires us to.</p>
 
-            <h3>3. Data Retention & Erasure (The "Right to be Forgotten")</h3>
-            <p>Users may invoke their right to data deletion at any time. Upon receipt of a formal request to <span class="contact-email">admin@eandccourier.ca</span>, the Company will purge all PII (Personally Identifiable Information) from active production databases within thirty (30) days, subject to statutory record-keeping requirements.</p>
+            <h3 id="data-rights">3. Deleting Your Data</h3>
+            <p>You have the "right to be forgotten." If you want us to delete your personal information, just email us at <span class="contact-email">admin@eandccourier.ca</span>. We will clear your data from our systems within 30 days.</p>
         </section>
 
         <hr style="margin: 80px 0; border: 0; border-top: 1px solid var(--border-color);">
 
         <section id="terms">
             <header>
-                <h1>Terms of Service</h1>
+                <h1><img src="icon2.png" alt="Logo" style="height: 45px;"> Terms of Service</h1>
                 <p class="last-updated">Effective Date: February 20, 2026</p>
             </header>
 
             <div class="legal-notice">
-                <strong>BINDING ARBITRATION NOTICE:</strong> By utilizing the E&C Courier platform, you agree that disputes between you and the Company will be resolved by binding, individual arbitration in the Province of Manitoba.
+                <strong>NOTE:</strong> By using E&C Courier, you agree that any legal disagreements will be settled through arbitration in Manitoba.
             </div>
 
-            <h3>1. Terms of Engagement</h3>
-            <p>Access to the E&C Courier platform constitutes an unconditional acceptance of these Terms. We provide a digital logistics interface facilitated by Firebase. Your continued use following any amendments constitutes acceptance of revised terms.</p>
+            <h3>1. Using Our App</h3>
+            <p>By using our website or app, you agree to these rules. These terms might change occasionally, and your continued use means you accept those changes.</p>
 
-            <h3>2. Driver Obligations & Statutory Compliance</h3>
-            <p>Drivers operating via the platform represent and warrant that they maintain a valid Class 5 (or higher) Manitoba Driver's License and all required vehicular insurance. Drivers must adhere strictly to the <em>Manitoba Highway Traffic Act</em>. Failure to comply results in immediate and irrevocable termination of platform access.</p>
-
-            <h3 id="liability">3. Comprehensive Limitation of Liability</h3>
-            <p>To the maximum extent permitted by law, E&C Courier shall not be liable for any indirect, incidental, special, or consequential damages. This includes, but is not limited to, delays resulting from:</p>
+            <h3 id="liability">2. Our Responsibility</h3>
+            <p>We try our best, but we provide this service "as is." E&C Courier is not responsible for problems caused by:</p>
             <ul>
-                <li>Force Majeure events (Extreme weather, infrastructure failure).</li>
-                <li>Inaccurate delivery coordinates provided by the end-user.</li>
-                <li>Third-party platform outages (Google Cloud/Firebase).</li>
+                <li>Events out of our control (like extreme weather).</li>
+                <li>Wrong delivery addresses entered by users.</li>
+                <li>Technical outages from third-party services like Google Cloud.</li>
             </ul>
-            <p>The service is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind.</p>
 
-            <h3>4. Indemnification</h3>
-            <p>You agree to indemnify and hold harmless E&C Courier and its directors from any claims, losses, or expenses (including legal fees) arising from your misuse of the platform or violation of these Terms.</p>
+            <h3>3. Your Responsibility</h3>
+            <p>You agree to protect E&C Courier from any legal claims or costs that result from you misusing our platform or breaking these rules.</p>
 
             <div class="footer-contact">
-                <h3>Legal Inquiries</h3>
-                <p>For formal notices or data requests, please contact us at:</p>
+                <h3>Questions?</h3>
+                <p>For any data requests or legal questions, please reach out to us:</p>
                 <a href="mailto:admin@eandccourier.ca" class="contact-email">admin@eandccourier.ca</a>
             </div>
         </section>
