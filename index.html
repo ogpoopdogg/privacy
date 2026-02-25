@@ -49,9 +49,11 @@
         }
 
         header { margin-bottom: 60px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 20px; }
-        h1 { font-size: 2.5rem; color: var(--primary-blue); margin: 0; display: flex; align-items: center; gap: 15px; }
-        h2 { font-size: 1.75rem; color: var(--primary-blue); margin-top: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
-        h3 { font-size: 1.25rem; color: var(--accent-blue); margin-top: 30px; }
+        
+        /* Adjusted Title Sizes for Single-Line Fit */
+        h1 { font-size: 1.75rem; color: var(--primary-blue); margin: 0; display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+        h2 { font-size: 1.4rem; color: var(--primary-blue); margin-top: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; white-space: nowrap; }
+        h3 { font-size: 1.1rem; color: var(--accent-blue); margin-top: 30px; white-space: nowrap; }
         
         .last-updated { font-style: italic; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 40px; }
         .legal-notice { background: #eff6ff; border-left: 4px solid var(--accent-blue); padding: 20px; margin: 30px 0; font-size: 0.95rem; }
@@ -66,6 +68,7 @@
             body { flex-direction: column; }
             nav { width: 100%; height: auto; position: relative; padding: 20px; border-right: none; border-bottom: 1px solid var(--border-color); }
             main { margin-left: 0; padding: 40px 20px; }
+            h1, h2, h3 { white-space: normal; } /* Allow wrap on very small screens */
         }
     </style>
 </head>
@@ -76,61 +79,61 @@
         <a href="#privacy">Privacy Policy</a>
         <a href="#terms">Terms of Service</a>
         <a href="#data-rights">Data Rights</a>
-        <a href="#liability">Our Liability</a>
+        <a href="#liability">Platform Liability</a>
     </nav>
 
     <main>
         <section id="privacy">
             <header>
-                <h1><img src="icon2.png" alt="Logo" style="height: 45px;"> Privacy Policy</h1>
+                <h1><img src="icon2.png" alt="" style="height: 32px; flex-shrink: 0;"> Privacy Policy</h1>
                 <p class="last-updated">Effective Date: February 20, 2026</p>
             </header>
 
-            <p>E&C Courier cares about your privacy. We follow Canadian privacy laws (PIPEDA) to keep your information safe while you use our app and website.</p>
+            <p>E&C Courier is committed to protecting your personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em>. This policy outlines how we handle data within our digital platform.</p>
 
-            <h3>1. Information We Collect</h3>
+            <h3>1. Collection of Information</h3>
             <ul>
-                <li><strong>Account Info:</strong> Your name, email, and phone number so you can log in and use our service.</li>
-                <li><strong>Location:</strong> We only use your location to help you set delivery points. We do not track you all the time.</li>
-                <li><strong>Technical Data:</strong> Basic info like your device type and IP address to keep the app working correctly via Google Firebase.</li>
+                <li><strong>Account Data:</strong> We collect your name, email address, and phone number to facilitate secure account authentication and communication.</li>
+                <li><strong>Location Services:</strong> Geolocation data is utilized only to establish delivery points as specified by the user. We do not engage in persistent background tracking of customers.</li>
+                <li><strong>Technical Logs:</strong> Standard metadata, including device identifiers and crash reports, is processed via Google Firebase to maintain platform stability.</li>
             </ul>
 
-            <h3>2. How We Share Data</h3>
-            <p>We do not sell or rent your information to anyone. We only share data with Google Firebase to run the technical side of our service, or if the law requires us to.</p>
+            <h3>2. Data Usage and Disclosure</h3>
+            <p>Your data is never sold or leased to third parties. Information is shared with Google Firebase strictly for the technical operation of the application. We may disclose information only when required by Canadian law or to ensure user safety.</p>
 
-            <h3 id="data-rights">3. Deleting Your Data</h3>
-            <p>You have the "right to be forgotten." If you want us to delete your personal information, just email us at <span class="contact-email">admin@eandccourier.ca</span>. We will clear your data from our systems within 30 days.</p>
+            <h3 id="data-rights">3. Your Data Rights</h3>
+            <p>Users may request the removal of their personal data at any time. Upon receiving a formal request at <span class="contact-email">admin@eandccourier.ca</span>, we will purge all identifiable information from our active databases within thirty (30) days.</p>
         </section>
 
         <hr style="margin: 80px 0; border: 0; border-top: 1px solid var(--border-color);">
 
         <section id="terms">
             <header>
-                <h1><img src="icon2.png" alt="Logo" style="height: 45px;"> Terms of Service</h1>
+                <h1><img src="icon2.png" alt="" style="height: 32px; flex-shrink: 0;"> Terms of Service</h1>
                 <p class="last-updated">Effective Date: February 20, 2026</p>
             </header>
 
             <div class="legal-notice">
-                <strong>NOTE:</strong> By using E&C Courier, you agree that any legal disagreements will be settled through arbitration in Manitoba.
+                <strong>Dispute Resolution:</strong> By using this platform, you agree that any disputes will be resolved through binding arbitration within the Province of Manitoba.
             </div>
 
-            <h3>1. Using Our App</h3>
-            <p>By using our website or app, you agree to these rules. These terms might change occasionally, and your continued use means you accept those changes.</p>
+            <h3>1. Acceptance of Terms</h3>
+            <p>Accessing the E&C Courier platform constitutes your agreement to these Terms. We reserve the right to update these terms periodically; continued use of the service following updates signifies your acceptance of the revised version.</p>
 
-            <h3 id="liability">2. Our Responsibility</h3>
-            <p>We try our best, but we provide this service "as is." E&C Courier is not responsible for problems caused by:</p>
+            <h3 id="liability">2. Limitation of Liability</h3>
+            <p>The platform is provided on an "as is" and "as available" basis. E&C Courier shall not be held liable for service interruptions or delays resulting from:</p>
             <ul>
-                <li>Events out of our control (like extreme weather).</li>
-                <li>Wrong delivery addresses entered by users.</li>
-                <li>Technical outages from third-party services like Google Cloud.</li>
+                <li>Events beyond our reasonable control (e.g., extreme weather or infrastructure failure).</li>
+                <li>Inaccurate information or delivery coordinates provided by the user.</li>
+                <li>Outages affecting third-party providers, including Google Cloud and Firebase.</li>
             </ul>
 
-            <h3>3. Your Responsibility</h3>
-            <p>You agree to protect E&C Courier from any legal claims or costs that result from you misusing our platform or breaking these rules.</p>
+            <h3>3. User Indemnification</h3>
+            <p>You agree to indemnify and hold E&C Courier harmless from any claims, damages, or legal expenses arising from your unauthorized use of the platform or violation of these established Terms.</p>
 
             <div class="footer-contact">
-                <h3>Questions?</h3>
-                <p>For any data requests or legal questions, please reach out to us:</p>
+                <h3>Legal Inquiries</h3>
+                <p>For formal notices or data-related requests, please contact our administration team:</p>
                 <a href="mailto:admin@eandccourier.ca" class="contact-email">admin@eandccourier.ca</a>
             </div>
         </section>
