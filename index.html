@@ -66,7 +66,7 @@
 
         @media (max-width: 900px) {
             body { flex-direction: column; }
-            nav { width: 100%; height: auto; position: relative; padding: 20px; border-right: none; border-bottom: 1px solid var(--border-color); }
+            nav { width: 100%; box-sizing: border-box; height: auto; position: relative; padding: 20px; border-right: none; border-bottom: 1px solid var(--border-color); }
             main { margin-left: 0; padding: 40px 20px; }
             h1, h2, h3 { white-space: normal; } /* Allow wrap on very small screens */
         }
@@ -79,6 +79,7 @@
         <a href="#privacy">Privacy Policy</a>
         <a href="#terms">Terms of Service</a>
         <a href="#data-rights">Data Rights</a>
+        <a href="staff.html">Staff Notice</a>
         <a href="#liability">Platform Liability</a>
     </nav>
 
@@ -86,23 +87,55 @@
         <section id="privacy">
             <header>
                 <h1><img src="icon2.png" alt="" style="height: 32px; flex-shrink: 0;"> Privacy Policy</h1>
-                <p class="last-updated">Effective Date: February 20, 2026</p>
+                <p class="last-updated">Effective Date: November 4, 2026 (replaces the February 20, 2026 version)</p>
             </header>
 
-            <p>E&C Courier is committed to protecting your personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em>. This policy outlines how we handle data within our digital platform.</p>
+            <p>E&amp;C Courier is committed to protecting your personal information in accordance with the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em>. This policy explains what our apps collect, why, who we share it with, where it is stored and how long we keep it.</p>
 
             <h3>1. Collection of Information</h3>
             <ul>
-                <li><strong>Account Data:</strong> We collect your name, email address, and phone number to facilitate secure account authentication and communication.</li>
+                <li><strong>Account Data:</strong> We collect your name, email address, and phone number to facilitate secure account authentication and communication. New Request Pickup accounts confirm the phone number with a one-time code sent by text message.</li>
+                <li><strong>Pickup Requests and Contacts:</strong> The pickup and delivery addresses, names, phone numbers and notes you enter, contacts you save or import from a spreadsheet, and your request history.</li>
+                <li><strong>Customer Records:</strong> Our staff keep the business or contact name, address, phone number, opening time and delivery notes for the places we pick up from and deliver to, so we can plan routes.</li>
                 <li><strong>Location Services:</strong> Geolocation data is utilized only to establish delivery points as specified by the user. We do not engage in persistent background tracking of customers.</li>
+                <li><strong>Security Records:</strong> When anyone signs in to an E&amp;C app we record the time, IP address, browser and device, and sign-in method. We also record failed sign-in attempts (including the email address typed), password reset and verification messages, and each change to our records (who made it, when, and what it was before and after).</li>
                 <li><strong>Technical Logs:</strong> Standard metadata, including device identifiers and crash reports, is processed via Google Firebase to maintain platform stability.</li>
             </ul>
 
-            <h3>2. Data Usage and Disclosure</h3>
-            <p>Your data is never sold or leased to third parties. Information is shared with Google Firebase strictly for the technical operation of the application. We may disclose information only when required by Canadian law or to ensure user safety.</p>
+            <h3>2. Why We Use It</h3>
+            <ul>
+                <li>To run your account and carry out the pickups and deliveries you request.</li>
+                <li>To plan routes and find addresses on a map.</li>
+                <li>To protect accounts and records: to spot and stop break-ins, misuse and unwanted changes.</li>
+            </ul>
 
-            <h3 id="data-rights">3. Your Data Rights</h3>
-            <p>Users may request the removal of their personal data at any time. Upon receiving a formal request at <span class="contact-email">admin@eandccourier.ca</span>, we will purge all identifiable information from our active databases within thirty (30) days.</p>
+            <h3>3. Data Usage and Disclosure</h3>
+            <p>Your data is never sold or leased to third parties. We share it only with the services that run our apps, and each receives only what it needs:</p>
+            <ul>
+                <li><strong>Google Firebase and Google Cloud:</strong> sign-in, our database, server functions, backups and verification text messages.</li>
+                <li><strong>Google Maps Platform:</strong> addresses are sent to Google to find them on the map and to work out routes.</li>
+            </ul>
+            <p>We may disclose information only when required by Canadian law or to ensure user safety.</p>
+
+            <h3>4. Where It Is Stored</h3>
+            <p>Our database and server functions run in Google's <em>us-central1</em> region in the United States. Information stored there may be accessible to courts, law enforcement and national security authorities of the United States under its laws.</p>
+
+            <h3>5. How Long We Keep It</h3>
+            <ul>
+                <li><strong>Accounts and request history:</strong> while your account is open, so you can see and repeat past pickups. See Your Data Rights below to have them removed.</li>
+                <li><strong>Security records:</strong> sign-in records and the record of changes are deleted automatically after 90 days. Security alerts raised from them are kept for one year. The list of devices used with an account is kept until the account is deleted.</li>
+                <li><strong>Backups:</strong> a full copy of our database is made every day and each copy is deleted after 30 days, so removed information can stay in a backup for up to 30 days.</li>
+                <li><strong>Map coordinates from Google:</strong> removed from saved routes after 30 days.</li>
+            </ul>
+
+            <h3>6. Employees and Drivers</h3>
+            <p>What we record about our own staff, including time clock punch locations and vehicle GPS, is described in our <a href="staff.html">Staff Privacy and Monitoring Notice</a>.</p>
+
+            <h3 id="data-rights">7. Your Data Rights</h3>
+            <p>Users may request access to, correction of, or removal of their personal data at any time. Upon receiving a formal request at <span class="contact-email">admin@eandccourier.ca</span>, we will purge all identifiable information from our active databases within thirty (30) days. Copies in backups are deleted as those backups expire (within 30 days).</p>
+
+            <h3>8. Accountability</h3>
+            <p>E&amp;C Courier's privacy officer is responsible for our compliance with this policy and with PIPEDA. Questions, requests and complaints can be sent to <span class="contact-email">admin@eandccourier.ca</span>. You may also contact the <a href="https://www.priv.gc.ca/" target="_blank" rel="noopener">Office of the Privacy Commissioner of Canada</a>.</p>
         </section>
 
         <hr style="margin: 80px 0; border: 0; border-top: 1px solid var(--border-color);">
