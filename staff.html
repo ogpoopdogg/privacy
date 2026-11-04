@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Privacy Notice | E&amp;C Courier</title>
+    <style>
+        :root {
+            --primary-blue: #0f172a;
+            --accent-blue: #2563eb;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.7; 
+            color: var(--text-main); 
+            background-color: var(--bg-light);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Fixed Sidebar Navigation */
+        nav { 
+            width: 280px;
+            height: 100vh;
+            background: white;
+            border-right: 1px solid var(--border-color);
+            padding: 40px 20px;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        nav h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 20px; }
+        nav a { display: block; padding: 10px 15px; color: var(--text-main); text-decoration: none; border-radius: 6px; margin-bottom: 5px; transition: all 0.2s; font-size: 0.95rem; }
+        nav a:hover { background: var(--bg-light); color: var(--accent-blue); }
+
+        /* Main Content Area */
+        main { 
+            margin-left: 320px;
+            max-width: 900px;
+            padding: 80px 40px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.02);
+        }
+
+        header { margin-bottom: 60px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 20px; }
+        
+        /* Adjusted Title Sizes for Single-Line Fit */
+        h1 { font-size: 1.75rem; color: var(--primary-blue); margin: 0; display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+        h2 { font-size: 1.4rem; color: var(--primary-blue); margin-top: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; white-space: nowrap; }
+        h3 { font-size: 1.1rem; color: var(--accent-blue); margin-top: 30px; white-space: nowrap; }
+        
+        .last-updated { font-style: italic; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 40px; }
+        .legal-notice { background: #eff6ff; border-left: 4px solid var(--accent-blue); padding: 20px; margin: 30px 0; font-size: 0.95rem; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        
+        .footer-contact { margin-top: 80px; padding: 40px; background: var(--bg-light); border-radius: 12px; text-align: center; }
+        .contact-email { font-weight: bold; color: var(--accent-blue); }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            nav { width: 100%; box-sizing: border-box; height: auto; position: relative; padding: 20px; border-right: none; border-bottom: 1px solid var(--border-color); }
+            main { margin-left: 0; padding: 40px 20px; }
+            h1, h2, h3 { white-space: normal; } /* Allow wrap on very small screens */
+        }
+        .sign { margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px 40px; }
+        .sign div { border-top: 1px solid var(--text-main); padding-top: 6px; font-size: 0.9rem; color: var(--text-muted); min-height: 50px; }
+        table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+        th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--border-color); }
+        th { color: var(--primary-blue); }
+        @media print { nav { display: none; } main { margin-left: 0; padding: 0; box-shadow: none; } body { background: white; } }
+        @media (max-width: 600px) { .sign { grid-template-columns: 1fr; } table, tbody, tr, td, th { display: block; } thead { display: none; } td { border: 0; padding: 4px 0; } tr { border-bottom: 1px solid var(--border-color); padding: 10px 0; } td:first-child { font-weight: 600; color: var(--primary-blue); } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Legal Documentation</h2>
+        <a href="index.html#privacy">Privacy Policy</a>
+        <a href="index.html#terms">Terms of Service</a>
+        <a href="staff.html">Staff Notice</a>
+    </nav>
+
+    <main>
+        <section>
+            <header>
+                <h1><img src="icon2.png" alt="" style="height: 32px; flex-shrink: 0;"> Staff Privacy and Monitoring Notice</h1>
+                <p class="last-updated">Effective Date: November 4, 2026</p>
+            </header>
+
+            <p>This notice tells E&amp;C Courier employees and drivers what our apps and vehicles record about them, why, who can see it and how long we keep it. Please read it, ask any questions, and sign the copy your manager gives you.</p>
+
+            <h3>1. What we record</h3>
+            <table>
+                <thead><tr><th>What</th><th>When</th><th>Who can see it</th></tr></thead>
+                <tbody>
+                    <tr><td>Punch times</td><td>Each punch in and out, by the server clock, plus the time you pressed it if your phone had no signal.</td><td>You, and the time clock administrators.</td></tr>
+                    <tr><td>Punch location</td><td>Your phone's GPS position and its accuracy at each punch in, punch out and vehicle change, with the street address Google finds for it. Only at those moments, not in between. If you block location, the punch still works and shows "No location".</td><td>The time clock administrators, on the timesheet and a map.</td></tr>
+                    <tr><td>Vehicle GPS</td><td>Company vehicles have GPS trackers (PAJ and FleetHunt) that report the vehicle's position whenever the tracker is on, including live position and past trips.</td><td>Staff given access to Route Watcher.</td></tr>
+                    <tr><td>Vehicle use and checks</td><td>Which vehicle you drive, oil checks and problem reports you send.</td><td>The time clock administrators.</td></tr>
+                    <tr><td>Sign-ins</td><td>Each sign-in to an E&amp;C app: time, IP address, browser and device, and sign-in method. Failed sign-ins, including the email typed, and password reset messages.</td><td>The company owner, in the security log.</td></tr>
+                    <tr><td>Changes you make</td><td>Who changed which record in our apps, when, and what it was before and after. Changes to punches made by administrators are recorded the same way.</td><td>The company owner, and the time clock administrators for punch changes.</td></tr>
+                    <tr><td>Map use</td><td>How many Google Maps requests each person's use of Route Planner and Route Watcher made, to control cost.</td><td>The company owner.</td></tr>
+                </tbody>
+            </table>
+            <p>Route Helper uses your phone's location only on your phone, to show where you are and give directions. It is not saved.</p>
+
+            <h3>2. Why we record it</h3>
+            <ul>
+                <li>To pay you correctly for the hours you work.</li>
+                <li>To confirm where shifts start and end, and to sort out missed or disputed punches.</li>
+                <li>To dispatch work, keep vehicles safe and maintained, and find a vehicle if it is lost or stolen.</li>
+                <li>To protect our accounts and records from break-ins and unwanted changes.</li>
+            </ul>
+            <p>We do not use these records to track you outside work, and we do not sell or share them except with the services that run our apps (Google Firebase and Google Cloud, Google Maps, and the GPS tracker companies) or when the law requires it.</p>
+
+            <h3>3. How long we keep it</h3>
+            <ul>
+                <li><strong>Timesheets, including punch times and locations:</strong> at least three years, as Manitoba's Employment Standards Code requires for records of hours worked.</li>
+                <li><strong>Sign-in records and the record of changes:</strong> deleted automatically after 90 days. Security alerts are kept for one year.</li>
+                <li><strong>Vehicle trip history:</strong> kept by the GPS tracker company under its own terms.</li>
+                <li><strong>Backups:</strong> daily copies of our database, each deleted after 30 days.</li>
+            </ul>
+            <p>Our database and server functions run in Google's <em>us-central1</em> region in the United States, where they may be accessible to United States authorities under its laws.</p>
+
+            <h3>4. Your access and questions</h3>
+            <p>You can see your own punches and hours in the time clock at any time. To see the other records we hold about you, ask for a correction, or raise a concern, contact <span class="contact-email">admin@eandccourier.ca</span>.</p>
+
+            <h3>5. Acknowledgement</h3>
+            <p>I have read this notice and understand what E&amp;C Courier records about me at work and why.</p>
+            <div class="sign">
+                <div>Employee name</div>
+                <div>Signature</div>
+                <div>Date</div>
+                <div>Received for E&amp;C Courier by</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
